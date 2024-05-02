@@ -9,10 +9,10 @@ import { TableCell, TableRow } from '@/components/ui/table'
 
 import { OrderDetails } from './order-details'
 
-export interface OrderTableRowProps {
+interface OrderTableRowProps {
   order: {
     orderId: string
-    createdAt: string
+    createdAt: Date
     status: 'pending' | 'canceled' | 'processing' | 'delivering' | 'delivered'
     customerName: string
     total: number
